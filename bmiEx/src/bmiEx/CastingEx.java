@@ -11,7 +11,7 @@ public class CastingEx {
 	}
 	// 큰 허용 범위 타입을 
    //작은 허용 범위 타입으로 강제로 나누어 저장 ㄴㄱ	
-  	long lValue = 500;
+	long lValue =500;
 //	int lVaule = 0;
 //	int 2Value = (int)lVaule;
 //	System.out.println(1Value);
@@ -26,16 +26,6 @@ public class CastingEx {
 //	System.out.println(intValue);
 //	System.out.println(byteValue);
 	
-//	
 
+	}
 	
-	//수정하기
-=======
-	// 추가하기1
-	// 추가하기2
-
-//	}
-	
-	
-
-}
