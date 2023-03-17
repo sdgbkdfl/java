@@ -26,6 +26,8 @@ public class CastingEx {
 //	System.out.println(intValue);
 //	System.out.println(byteValue);
 //	
+	
+	//수정하기
 //	}
 	
 	
