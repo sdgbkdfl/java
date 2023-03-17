@@ -1,4 +1,4 @@
-package loofing;
+package looping;
 
 public class LoofFor {
 public static void main(String[] args) {

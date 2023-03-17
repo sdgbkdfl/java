@@ -1,4 +1,4 @@
-package loofing;
+package looping;
 
 public class WhileEx {
 
