@@ -28,6 +28,7 @@ public class CastingEx {
 	
 //	
 	// 추가하기 1
+	// 추가하기2
 //	}
 	
 	
