@@ -11,26 +11,27 @@ public class ArrayEx {
 		//※배열의 길이를 확인하는 방법 : 변수명.length
 		//  = 항목의 갯수
 		
-		//배열의 선언
+		//값 목록으로 배열 생성
 		//배열 선언과 동시에 값을 입력
 		int[] score = {90, 80, 60, 85, 50, 60, 70, 55, 99, 80};
-	//	int score[];
-// 	    System.out.println("score[0]:" + score[0]);    -인덱스 데이터 확인	
+
+ 	       System.out.println("score[0]:" + score[0]);    //index 데이터 확인	
+ 	       System.out.println("score[1]:" + score[1]);    //index 데이터 확인	
 		
 		//배열의 길이를 반환 : 변수이름.length
 		int j = score.length; 
-		System.out.println("배열의 길이 : "+ score.length);
+		   System.out.println("배열의 길이 : "+ score.length);
 		
 	    //배열의 값을 참조하는 방법
 		//변수 이름[index]
 		
-		int sum = score[5];
+		   int sum = 0;
 		for(int i=0; i<score.length; i++) {
+			sum += score[i];
 			System.out.println(score[i]);
 		}
-	    System.out.println("점수 총 합계 : "+ sum);
-	    System.out.println("점수 평균 : "+ sum/score.length);
-
+		System.out.println("점수 총 합계 : "+ sum);
+		System.out.println("점수 평균 : "+ sum/score.length);
 	}
 
 }

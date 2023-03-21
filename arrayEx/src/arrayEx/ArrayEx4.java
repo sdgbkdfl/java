@@ -4,6 +4,10 @@ public class ArrayEx4 {
 
 	public static void main(String[] args) {
 		//string[] args에 값 넣기
+		//명령 라인 입력
+		//run configuration - program argument 사용
+		//값 출력
+		
 		System.out.println(Integer.parseInt(args[0]));
 		// 1 로컬 2 테스트 3 운영
 		int mode = Integer.parseInt(args[0]);
