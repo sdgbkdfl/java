@@ -7,17 +7,12 @@ public class ArrayEx6 {
 		// 행과 열로 구성된 배열
 		// 타입 [][]변수명 = 타입[행] [열]
 		int[][] scores = new int[2][3];
-
-		// 배열의 길이 출력
-
-		// 값에 접근하는 방법
-
 		scores[0] = new int[] { 1, 2, 3 };
 		scores[1] = new int[] { 4, 5, 6 };
 
-		System.out.println("scores.length" + scores.length);
-		System.out.println("scores[0]" + scores[0].length);
-		System.out.println("scores[1]" + scores[1].length);
+		System.out.println("scores.length:" + scores.length);
+		System.out.println("scores[0]:" + scores[0].length);
+		System.out.println("scores[1]:" + scores[1].length);
 		// 변수이름[행][열]
 		System.out.println(scores[0][0]);
 		System.out.println("scores[0][0]");
