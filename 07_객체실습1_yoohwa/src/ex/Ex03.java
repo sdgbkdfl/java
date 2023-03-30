@@ -25,7 +25,7 @@ public class Ex03 {
 		
 		String str = "안녕하세요";
 		
-		System.out.println("char : "str.charAt(0));
+		System.out.println("char : "+str.charAt(0));
 		System.out.println((int)str.charAt(lotteNum));
 		//문자열 끊기
 		System.out.println(str.length());

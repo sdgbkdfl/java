@@ -11,7 +11,7 @@ public class Product {
 	private double tax;
 	
 	//생성자
-	public Product() {
+	public Product() {}
 	
 	//리턴값 모를 때, 참조타입이면 null, ""
 	//메소드 이용하기 위해 리턴타입에.... 
@@ -23,7 +23,7 @@ public class Product {
 		
 
 	public String information() {
-		return getId()+getname();
+		return getId()+getName();
 	}	
 	/**
 	 * 가격을 계산하고 출력합니다.
