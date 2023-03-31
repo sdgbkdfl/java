@@ -4,7 +4,7 @@ public class WrapperEx {
 
 	public static void main(String[] args) {
 		//박싱 : 기본타입 -> 참조타입
-		//래퍼 클래ㅑ스로 감싸주는거
+		//Wrapper 클래스로 감싸주는거
 		//자동형변환
 		
 		Integer obj1 = new Integer(100);

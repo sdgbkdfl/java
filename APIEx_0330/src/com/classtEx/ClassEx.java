@@ -3,7 +3,7 @@ package com.classtEx;
 public class ClassEx {
 	public static void main(String[] args) {
 		//클래스의 정보 가져오기
-		//Class clazz = Car.class;
+		//Class clazz = 클래스이름.class;
 		
 		Class clazz; 
 		
