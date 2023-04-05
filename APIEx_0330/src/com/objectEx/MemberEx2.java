@@ -5,15 +5,12 @@ public class MemberEx2 {
 		private String id;
 		private String name;
 		
-		public Member(String id, String name) {
+		public MemberEx2(String id, String name) {
 			
 			this.id =id;
 			this.name = name;
 		}
 	
-		public static toString(String id, String name) {
-			
-		}
 
 		public String getId() {
 			return id;

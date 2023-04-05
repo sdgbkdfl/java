@@ -21,7 +21,7 @@ public class ArrayEx8 {
 			 
 			 //2차원 배열에서 값에 접근하는 방법
 			 System.out.println(points[j]); //진짜 방에 들어가 있는 값
-			 System.out.println(points[i][j]); 
+			 System.out.println(scores[i][j]); 
 			 
 		}
     	}

@@ -2,9 +2,10 @@ package sec01.exam02;
 
 import sec01.exam01.Audio;
 import sec01.exam01.RemoteControl;
+import sec01.exam01.SmartTV;
 
 public class Application {
-
+	RemoteControl rc = null;
 	public static void main(String[] args) {
 		
 		Myclass myclass = new Myclass(null);
@@ -21,15 +22,7 @@ public class Application {
 		myclass.rc.turnOn();
 		myclass.rc.setVolume(15);
 		myclass.rc.turnOff();
-		
-		//2. 인터페이스가 생성자의 매개변수로 이용된 경우
-		//인터페이스의 구현체를 생성하여 매개변수로 전달
-		 Myclass(RemoteControl rc){
-			this.rc = rc;
-			rc.turnOn();
-			setVolume(15);	
-			
-		}
+	
 		
 		System.out.println("=====================");
 		
@@ -37,13 +30,13 @@ public class Application {
 		//기본 생성자로 생성하면 rc =new SmartTV();
 		//필드의 선언부에서 생성하고 있습니다
 		//메서드 호출시 구현 객체를 매개값으로 대입
-		
+		Myclass myclass2 = new Myclass(new SmartTV());
 		myclass2.methodB(new Audio());
 		myclass2.rc.turnOn();
 		myclass2.rc.setVolume(15);
 		myclass2.rc.turnOff();
 		
-		Myclass myclass3 = new MyClass();
+		Myclass myclass3 = new Myclass(new Audio());
 		//4. 메서드에 선언된 로컬변수를 rc에 저장
 		myclass3.methodA();
 		myclass3.rc.turnOn();

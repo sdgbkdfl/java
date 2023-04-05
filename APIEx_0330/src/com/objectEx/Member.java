@@ -36,7 +36,7 @@ public class Member {
 //-------------------------------------------------------------------------	
 	private String id; //필드로 아이디 선언
 	
-	public Member(String id, String string) {
+	public Member(String id) {
 		this.id =id;
 		
 	}

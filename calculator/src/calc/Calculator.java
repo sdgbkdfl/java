@@ -34,7 +34,7 @@ public class Calculator {
 	}
 	
 	//배열타입으로 선언(매개변수 개수 모를 경우)
-	public int addFn(int...num) {
+	public int addFn(int...numbers) {
 		int sum =0;
 		for(int num : numbers) {
 			sum +=num;

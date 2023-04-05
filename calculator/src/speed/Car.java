@@ -14,7 +14,7 @@ public class Car {
 	
 	// 2 speed를 매개변수로 받는 생성자
 	
-	public Car(int speed);
+	public Car(int speed) {}
 	//메소드 -> 기능을 정의
 	//getSpeed():int
 	public int getSpeed() {

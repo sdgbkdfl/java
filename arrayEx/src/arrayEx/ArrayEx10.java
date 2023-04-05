@@ -18,7 +18,7 @@ public class ArrayEx10 {
 		//newArray 출력
 		//for문
 		System.out.println("==========newArr");
-		System.out.println(newArr[i]);//배열 몇번째 방에 있는지
+//		System.out.println(newArr[i]);//배열 몇번째 방에 있는지
 		
 		//
 		

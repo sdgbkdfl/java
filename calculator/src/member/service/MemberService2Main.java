@@ -5,7 +5,7 @@ public class MemberService2Main {
 	public static void main(String[] args) {
 		
 		
-		MemberService2Main service = new MemberService2Main("홍길동","123");
+		MemberService2 service = new MemberService2("홍길동","123");
 		
 		boolean res = service.login("홍길동","123");
 		
@@ -24,5 +24,5 @@ public class MemberService2Main {
 		
 		
 		
-	}
 }
+

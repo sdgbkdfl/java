@@ -8,6 +8,10 @@ public class Korean {
 	String ssn;
 	
 	//기본생성자	
+	public Korean() {
+		
+	
+	}
 	public Korean(String n, String s ) {
 			//필드 초기화
 		name = n;

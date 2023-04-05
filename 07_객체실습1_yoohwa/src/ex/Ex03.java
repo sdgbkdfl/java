@@ -14,7 +14,7 @@ public class Ex03 {
 		//방을 바꾸기 위해 새로운 변수를 선언하고 이용
 		
 		//배열의 중복 제거
-		int lotteNum;
+		int lotteNum= 0;
 		
 		for(int num : numbers) {
 			if(num==lotteNum) {

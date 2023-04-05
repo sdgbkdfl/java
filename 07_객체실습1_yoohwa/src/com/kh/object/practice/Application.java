@@ -33,21 +33,12 @@ public class Application {
 		
 		book1.print();
 		
-			
-		
-		
-		public void print() {
-				System.out.println("도서명:"+getTitle());
-				
-				int price = (int)(getPrice() - (getPrice()*getDiscountRate()));
-				System.out.println("할인된 가격:"+getPrice());
-				
-				System.out.println("도서명:"+getTitle());
-				System.out.println("할인된 가격:"+getPrice());
-
 	}
 		
+		
+
+		
 	
-		}
+		
 
 }

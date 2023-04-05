@@ -5,6 +5,7 @@ import java.util.List;
 
 public class ArrayListEx {
 	public static void main(String[] args) {
+		
 		List<String>list = new ArrayList<String>();
 		
 		//리스트에 저장 : add메서드 
@@ -35,6 +36,7 @@ public class ArrayListEx {
 			str = list.get(i);
 			System.out.println(i+ ":"+ str);
 		}
+		System.out.println("---------------------------");
 		//향상된 for문
 		int i = 0;
 		for(String s : list) {

@@ -10,6 +10,15 @@ public class Product {
 	private int price;
 	private double tax;
 	
+	public Product(String id, String name, String site, int price, double tax) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.site = site;
+		this.price = price;
+		this.tax = tax;
+	}
+
 	//생성자
 	public Product() {}
 	
@@ -30,7 +39,7 @@ public class Product {
 	 */
 	public void calc() {
 		System.out.println("상품명 = "+getName());
-		System.out.println("부가세를 포함한 가격 = "+getprice()+(getprice()*getTax())+"원");
+		System.out.println("부가세를 포함한 가격 = "+getPrice()+(getPrice()*getTax())+"원");
 	}
 	//setter(), getter()
 	public String getId() {

@@ -19,7 +19,7 @@ public class Person {
 		
 		//상수는 값을 변경하는 것 불가능
 		//상수는 대문자로 작성하는 것이 원칙
-		this.ssn = "12345";
-		this.name = "강동원";
+//		this.ssn = "12345"; =>변경 불가능으로 오류
+//		this.name = "강동원";
 	}
 }
