@@ -10,7 +10,7 @@ public class Book {
 	
 	
 	//생성자
-	public Book(int no, String tilte, String author, boolean isRent) {
+	public Book(int no, String tilte, String author, Boolean isRent) {
 		//super();
 		this.no = no;
 		this.tilte = tilte;

@@ -9,6 +9,9 @@ public interface Dao {
 	
 	//파일 읽어서 리스트 반환
 	List<Book> getList();
+	int delete(int no);
+	int update(int no);
+	int insert(Book book);
 	
 	
 	//리스트 파일로 출력

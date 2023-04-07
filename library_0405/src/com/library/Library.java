@@ -3,6 +3,7 @@ package com.library;
 import java.util.List;
 
 import com.library.dao.Dao;
+import com.library.dao.DatabaseDao;
 import com.library.dao.FileDao;
 import com.library.vo.Book;
 
@@ -27,6 +28,19 @@ public class Library {
 		list = dao.getList();
 		System.out.println(toString());
 	}
+	public Library(String daoType) {
+		//리스트(필드) 초기화 역할		
+		if(daoType.equals("DB")) {
+			dao = new DatabaseDao();
+		}
+		
+		
+		list = dao.getList();
+		System.out.println(toString());
+	}
+	
+
+	
 	@Override
 	public String toString() {
 		System.out.println("=*=*=*=책목록=*=*=*=");
@@ -155,6 +169,14 @@ public class Library {
 				//dao.ListToFile(list);
 				
 				boolean res = dao.ListToFile(list);
+				int i = dao.update(no);
+				if(i>0) {
+					System.out.println(i+"건 처리 완.");
+				}else {
+					System.out.println("처리 중 오류발생!");
+					book.setRent(false);
+				}
+				
 				if(!res) {
 					book.setRent(false);
 					System.out.println("파일로 출력하는데 실패했습니다");
@@ -196,6 +218,9 @@ public class Library {
 					//반납처리
 					book.setRent(false);
 					dao.ListToFile(list);
+					//업데이트 로직 호출
+					int i = dao.update(no);
+					dao.update(no);
 					System.out.println("도서가 반납되었습니다");
 					System.out.println(toString());
 					return true;

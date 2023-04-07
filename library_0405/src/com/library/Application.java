@@ -17,7 +17,7 @@ public class Application {
 	public static void main(String[] args) {
 		
 		//라이브러리 생성
-		Library lib = new Library();
+		Library lib = new Library("DB");
 		
 //		FileDao dao = new FileDao();
 //		
