@@ -13,28 +13,26 @@ public class JDBCEx {
 	public static void main(String[] args) {
 		JDBCEx ex = new JDBCEx();
 		ex.update();
-
 	}
 
 	public void getList() {
-
+		//데이터베이스 접근시 필요 정보
 		String url = "jdbc:oracle:thin:@localhost:1522:orcl";
 		String id = "orauser";
 		String pw = "1234";
-
-		// 클래스 로딩
-		// 커넥션 얻기
-		// 쿼리 실행 객체 생성
-		// 쿼리 실행 후 결과 집합 받아오기
-
 		Connection conn;
 
 		try {
+			// 클래스 로딩
 			Class.forName("oracle.jdbc.driver.OracleDriver");
+			// 커넥션 얻기
 			conn = DriverManager.getConnection(url, id, pw);
 			System.out.println("커넥션 성공!  " + conn);
 
+			// 쿼리 실행 객체 생성
 			Statement stmt = conn.createStatement();
+			
+			// 쿼리 실행 후 결과 집합 받아오기
 			ResultSet rs = stmt.executeQuery("SELECT  * FROM BOOK1");
 
 			List<Book> list = new ArrayList<>();
@@ -46,9 +44,7 @@ public class JDBCEx {
 
 				Book book = new Book(no, title, author);
 
-				list.add(book);
-				
-				
+				list.add(book);	
 				System.out.println(rs.getInt(1));
 				//System.out.println();
 				rs.getString(2);
